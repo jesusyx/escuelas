@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/EP_Derecho_295x295.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/ed-grid.min.css" />
+    <link rel="stylesheet" href="css/menu-main.min.css.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/css/splide.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,600;1,700&family=Nunito+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Escuela Profesional</title>
+  </head>
+  <body>
+    <header>
+    <div class="header-top s-100">
+        <div class="header-top-child ed-container">
+            <div class="left s-50 ed-item ed-container s-main-start">
+                <p>jesusyx22@gmail.com</p>
+                <p>+51 951 653</p>
+            </div>
+            <div class="right s-50 ed-item ed-container s-main-end">
+                <p>buscar</p>
+                <p>Redes Sociales:</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="nav__container ed-container">
+
+        <div class="nav__mobile">
+          <div class="nav__logo">
+            <img src="images/EP_Derecho_295x295.png" alt="" />
+            <h1>
+              Facultad de Ciencias <br />
+              Jurídicas y Políticas<br />
+              <span>UNA - PUNO</span>
+            </h1>
+          </div>
+          <!-- HAMBURGUER -->
+          <div class="nav__btn">
+            <a aria-label="Mobile menu" class="nav-toggle fade"
+              ><span></span><span class="mrg"></span><span class="mrg"></span
+            ></a>
+          </div>
+          <!-- END HAMBURGUER -->
+        </div>
+
+        <nav class="menu-toggle">
+          <ul class="nav__menu">
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Facultad</a></li>
+            <li class="dropdown">
+              <a href="#">Acreditacion</a>
+              <ul>
+                <li><a href="">Dropdown item 1</a></li>
+                <li><a href="">Dropdown item 2</a></li>
+                <li><a href="">Dropdown item 3</a></li>
+                <li class="dropdown second-level">
+                  <a href="#">2nd level dropdown</a>
+                  <ul>
+                    <li><a href="">Dropdown item 1</a></li>
+                    <li><a href="">Dropdown item 2</a></li>
+                    <li><a href="">Dropdown item 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Dropdown item 3</a></li>
+                <li><a href="">Dropdown item 4</a></li>
+              </ul>
+            </li>
+            <li><a href="">Investigacion</a></li>
+            <li><a href="">Libros</a></li>
+            <li><a href="">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+        <div class="">
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">Slide 01</li>
+                        <li class="splide__slide">Slide 02</li>
+                        <li class="splide__slide">Slide 03</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/menu-main.min.js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.4.21/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function () {
+            new Splide( '.splide' ).mount();
+        } );
+    </script>
+  </body>
+</html>

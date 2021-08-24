@@ -1,0 +1,79 @@
+body {
+  font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* MENU TOP */
+header .header-top {
+    background: #034341;
+    margin: 0;
+}
+
+header .header-top .header-top-child {
+    max-width: 80%;
+    padding: 10px 0;
+}
+header .header-top .header-top-child p {
+    margin: 0;
+    color: #d6d6d6;
+    font-size: 0.8rem;
+    font-family: 'Nunito Sans';
+
+}
+/* END MENU TOP */
+
+
+
+
+
+
+
+
+
+
+/* Nav logo */
+header .nav__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+header .nav__logo h1 {
+  font-size: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 0;
+  line-height: 1.55;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Nunito Sans";
+  font-weight: 700;
+}
+header .nav__logo h1 span {
+  color: rgb(212 180 51);
+}
+
+header .nav__logo img {
+  width: 90px;
+  max-width: 100px;
+}
+/* End Nav logo */
+
+
+
+
+/* Menu Navbar */
+header .nav__container {
+  padding: 1rem 0;
+  max-width: 80%;
+}
+header .nav__container .nav__menu {
+  margin: 0;
+}
+header nav.menu-toggle ul li a {
+    font-size: 0.95rem;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+
+/* End Menu Navbar */
