@@ -5,10 +5,40 @@
   --font-nunito: 'Nunito Sans', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   --font-montserrat: 'Montserrat', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+@font-face {
+  font-family: Gabriela Regular;
+  src: url("../fonts/Gabriela\ Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Prata';
+  src:url('../fonts/Prata.ttf.woff') format('woff'),
+      url('../fonts/Prata.ttf.svg#Prata') format('svg'),
+      url('../fonts/Prata.ttf.eot'),
+      url('../fonts/Prata.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #F2F1F7;
 }
+
+.is-active .fade-in-up {
+  visibility: visible !important;
+}
+
+/* @keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+.is-active h2{
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+} */
 
 
 /* MENU TOP */
@@ -103,7 +133,7 @@ header nav.menu-toggle ul li.dropdown ul.nested-menu {
 
 /* HERO */
 section ul.splide__pagination {
-  display: none;
+  visibility: hidden;
 }
 section.hero .splide__track {
   height: 80vh;
@@ -136,12 +166,14 @@ section.hero .splide__track ul.splide__list li .hero-container p {
 }
 section.hero .splide__track ul.splide__list li .hero-container h2 {
   padding: 0;
-  color: #ededed;
-  font-family: 'Roboto';
-  font-weight: 600;
-  line-height: 1.65;
+  color: #fff;
+  font-family: 'Gabriela Regular';
+  font-weight: 100;
+  line-height: 1.45;
   margin-bottom: 2rem;
-  font-size: 1.7rem;
+  font-size: 2.7rem;
+  text-shadow: 2px 2px #272727;
+  visibility: hidden;
 }
 section.hero .splide__track ul.splide__list li .hero-container a {
   padding: 12px 24px;
