@@ -8,9 +8,9 @@
 @font-face {
   font-family: Gabriela Regular;
   src: url("../fonts/Gabriela\ Regular.otf") format("opentype");
-}
+} 
 
-@font-face {
+/* @font-face {
   font-family: 'Prata';
   src:url('../fonts/Prata.ttf.woff') format('woff'),
       url('../fonts/Prata.ttf.svg#Prata') format('svg'),
@@ -18,27 +18,90 @@
       url('../fonts/Prata.ttf.eot?#iefix') format('embedded-opentype'); 
   font-weight: normal;
   font-style: normal;
+} */ 
+
+@font-face {
+  font-family: 'OPTIKiteLight';
+  src:url('../fonts/OPTIKiteLight.ttf.woff') format('woff'),
+      url('../fonts/OPTIKiteLight.ttf.svg#OPTIKiteLight') format('svg'),
+      url('../fonts/OPTIKiteLight.ttf.eot'),
+      url('../fonts/OPTIKiteLight.ttf.eot?#iefix') format('embedded-opentype'); 
+  font-weight: normal;
+  font-style: normal;
 }
+
+
 
 body {
   font-family: Roboto, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #F2F1F7;
+  /* background: #F2F1F7; */
+  background: #fff;
 }
 
 .is-active .fade-in-up {
   visibility: visible !important;
 }
 
-/* @keyframes example {
-  from {background-color: red;}
-  to {background-color: yellow;}
+/*GENERAL STYLES*/
+h2.section-title {
+  font-size: 2.7rem;
+  font-family: 'Roboto Condensed';
+  font-weight: 700;
+  margin-bottom: 4rem;
+  position: relative;
+  display: inline-block;
+  color: #464646;
 }
-.is-active h2{
-  background-color: red;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-} */
+h2.section-title:after {
+  content: '';
+  width: 50px;
+  height: 4px;
+  background: var(--secondary-color);
+  /* background: #079E99; */
+  position: absolute;
+  top: bot;
+  bottom: -10px;
+  left: 0;
+}
+
+a.view-more-button {
+  background: var(--main-color);
+  padding: 12px 0;
+  color: #fff;
+  font-family: var(--font-nunito);
+  text-decoration: none;
+  transition: all ease 0.5s;
+  display: inline-block;
+  width: 256px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+a.view-more-button-half {
+  background: var(--main-color);
+  padding: 12px 0;
+  color: #fff;
+  font-family: var(--font-nunito);
+  text-decoration: none;
+  transition: all ease 0.5s;
+  display: inline-block;
+  width: 128px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+a.view-more-button:hover {
+  background: #06807C;
+  transition: all ease 0.5s;
+}
+a.view-more-button-half:hover {
+  background: #06807C;
+  transition: all ease 0.5s;
+}
+
+/*END GENERAL STYLES*/
+
+
 
 
 /* MENU TOP */
@@ -132,6 +195,9 @@ header nav.menu-toggle ul li.dropdown ul.nested-menu {
 
 
 /* HERO */
+section.hero {
+  margin-bottom: 5rem;
+}
 section ul.splide__pagination {
   visibility: hidden;
 }
@@ -156,6 +222,7 @@ section.hero .splide__track ul.splide__list li .hero-container {
   transform: translateY(-50%);
   left: 10%;
   width: 50%;
+  padding: 0 1rem;
 }
 section.hero .splide__track ul.splide__list li .hero-container p {
   font-family: 'Nunito Sans';
@@ -167,7 +234,7 @@ section.hero .splide__track ul.splide__list li .hero-container p {
 section.hero .splide__track ul.splide__list li .hero-container h2 {
   padding: 0;
   color: #fff;
-  font-family: 'Gabriela Regular';
+  font-family: 'Roboto Condensed';
   font-weight: 100;
   line-height: 1.45;
   margin-bottom: 2rem;
@@ -175,23 +242,7 @@ section.hero .splide__track ul.splide__list li .hero-container h2 {
   text-shadow: 2px 2px #272727;
   visibility: hidden;
 }
-section.hero .splide__track ul.splide__list li .hero-container a {
-  padding: 12px 24px;
-  background: var(--main-color);
-  color: #fff;
-  font-family: 'Roboto';
-  font-size: 0.9rem;
-  text-decoration: none;
-  transition: all ease 0.5s;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 400;
-  display: inline-block;
-}
-section.hero .splide__track ul.splide__list li .hero-container a:hover {
-  background: #318F8C;
-  transition: all ease 0.5s;
-}
+
 
 section.hero .splide__track ul.splide__list li .hero-extra {
 
@@ -226,6 +277,109 @@ section.hero .splide__track ul.splide__list li .hero-extra .hero-extra-container
 }
 
 /* End HERO */
+
+
+/* NEWS AMD EVENTS SECTION */
+
+section.news-events-section div.ed-container {
+  max-width: 80%;
+}
+
+section.news-events-section .custom-container.left {
+  padding-top: 2rem;
+}
+section.news-events-section .custom-container .view-more-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+section.news-events-section .custom-container .news-container {
+  padding-right: 2rem;
+}
+section.news-events-section .custom-container .news-container .single-news {
+  display:flex;
+  /* background: #fff; */
+  /* box-shadow: 0 50px 130px 0 rgb(57 61 70 / 10%); */
+}
+section.news-events-section .custom-container .news-container .single-news:last-child  {
+  margin-bottom: 2rem;
+}
+section.news-events-section .custom-container .news-container .single-news:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+section.news-events-section .custom-container .news-container .single-news a.news-image {
+  display: inline-block;
+  text-decoration: none;
+  width: 30%;
+}
+
+section.news-events-section .custom-container .news-container .single-news a.news-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+section.news-events-section .custom-container .news-container .single-news .single-news-text {
+  width: 70%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+section.news-events-section .custom-container .news-container .single-news .single-news-text h3 a {
+  text-decoration: none;
+  color:#06807C;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 700;
+}
+section.news-events-section .custom-container .news-container .single-news .single-news-text p {
+  font-family: 'Poppins';
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+
+
+
+
+
+section.news-events-section .custom-container.right {
+  padding-left: 3rem;
+  background: #DFDFDF;
+  height: 100%;
+  padding-top: 2rem;
+  padding-right: 3rem;
+}
+section.news-events-section .custom-container.right .events-container p {
+  margin-bottom: 2rem;
+}
+section.news-events-section .custom-container.right .events-container p a {
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto Condensed';
+  line-height: 1.75;
+  font-weight: 700;
+}
+section.news-events-section .custom-container.right .events-container p a:hover {
+  color: #06807C;
+}
+section.news-events-section .custom-container.right .events-container p a i{
+  font-size: 1.6rem;
+  /* color: #bdbdbd; */
+  color: #00000024;
+  margin-right: 1rem;
+}
+
+
+
+/* END NEWS AMD EVENTS SECTION  */
+
+
 
 
 
