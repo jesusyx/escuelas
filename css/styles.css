@@ -36,9 +36,7 @@ h2.section-title:after {
   width: 3.125rem;
   height: 0.25rem;
   background: var(--secondary-color);
-  /* background: #079E99; */
   position: absolute;
-  top: bot;
   bottom: -10px;
   left: 0;
 }
@@ -76,6 +74,12 @@ a.view-more-button:hover {
 a.view-more-button-half:hover {
   background: #06807C;
   transition: all ease 0.5s;
+}
+
+.view-more-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*END GENERAL STYLES*/
@@ -181,7 +185,7 @@ section ul.splide__pagination {
   visibility: hidden;
 }
 section.hero .splide__track {
-  height: 80vh;
+  height: 40.625rem;
 }
 
 section.hero .splide__track ul.splide__list {
@@ -260,18 +264,17 @@ section.hero .splide__track ul.splide__list li .hero-extra .hero-extra-container
 
 /* NEWS AMD EVENTS SECTION */
 
-section.news-events-section div.ed-container {
+section.news-events-section {
+  margin-bottom: 4rem;
+}
+section.news-events-section > div.ed-container {
   max-width: 80%;
 }
 
 section.news-events-section .custom-container.left {
   padding-top: 2rem;
 }
-section.news-events-section .custom-container .view-more-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+
 section.news-events-section .custom-container .news-container {
   padding-right: 2rem;
 }
@@ -297,6 +300,7 @@ section.news-events-section .custom-container .news-container .single-news a.new
 section.news-events-section .custom-container .news-container .single-news a.news-image img {
   width: 100%;
   object-fit: cover;
+  border-radius: 2px;
 }
 
 section.news-events-section .custom-container .news-container .single-news .single-news-text {
@@ -305,15 +309,28 @@ section.news-events-section .custom-container .news-container .single-news .sing
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
 }
-section.news-events-section .custom-container .news-container .single-news .single-news-text h3 a {
+
+section.news-events-section .custom-container .news-container .single-news .single-news-text .news-date {
+  font-size: 0.8rem;
+  color: #06807C;
+  margin-bottom: 1rem;
+  margin-top: -0.5rem;
+}
+section.news-events-section .custom-container .news-container .single-news .single-news-text a.readmore {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.863);
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+section.news-events-section .custom-container .news-container .single-news .single-news-text h3 a.news-title {
   text-decoration: none;
   color:#06807C;
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  font-family: 'Roboto';
+  font-size: 1.3rem;
+  font-family: 'Roboto Condensed';
   font-weight: 700;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -331,7 +348,7 @@ section.news-events-section .custom-container .news-container .single-news .sing
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* number of lines to show */
+  -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
 
@@ -342,7 +359,7 @@ section.news-events-section .custom-container .news-container .single-news .sing
 
 section.news-events-section .custom-container.right {
   padding-left: 3rem;
-  background: #DFDFDF;
+  background: #EBEBF3;
   height: 100%;
   padding-top: 2rem;
   padding-right: 3rem;
@@ -369,9 +386,96 @@ section.news-events-section .custom-container.right .events-container p a i{
   margin-right: 1rem;
 }
 
-
-
 /* END NEWS AMD EVENTS SECTION  */
+
+
+
+
+
+
+
+
+
+
+
+/* SHADOW SECTION BEGIN */
+section.shadow-sec {
+  background: #EBEBF3;
+}
+section.shadow-sec > .ed-container {
+  max-width: 80%;
+}
+section.shadow-sec .jobs-container {
+  padding: 2rem 1rem;
+  width: 100%;
+}
+section.shadow-sec .jobs-container .jobs-title {
+  width: 100%;
+  text-align: center;
+}
+section.shadow-sec .jobs-container .jobs-title h2:after {
+  content: '';
+  width: 3.125rem;
+  height: 0.25rem;
+  background: var(--secondary-color);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.shadow-sec .jobs-container .jobs-content-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container {
+  width: 33.333%;
+  padding: 2rem 1rem;
+}
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item{
+  background: #fff;
+  padding: 2rem;
+  box-shadow: 0 50px 130px 0 rgb(57 61 70 / 10%);
+}
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item svg{
+  width: 3.125rem;
+  height: 3.125rem;
+  margin-bottom: 1rem;
+  fill: #038F8A;
+}
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item h3 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  font-family: 'Roboto';
+  margin-bottom: 0.7rem;
+}
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item p.empresa {
+  font-family: 'Nunito Sans';
+  margin-bottom: 1rem;
+}
+
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item a {
+  font-family: 'Nunito Sans';
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #615050;
+  display: inline-block;
+  padding: 0.3rem 0;
+  text-transform: uppercase;
+}
+section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item a:hover {
+  color: #e4c40f;
+}
+
+
+/* END SAHDOW BEGIN */
+
+
+
+
 
 
 
@@ -407,10 +511,17 @@ section.news-events-section .custom-container.right .events-container p a i{
   html {
     font-size: 14px;
   }
+  /* section.hero .splide__track {
+    height: 70vh;
+  } */
 }
 @media screen  and (max-width: 1280px) {
   html {
     font-size: 13px;
   }
+
+  /* section.hero .splide__track {
+    height: 60vh;
+  } */
 }
 /*end MEDIA QUERYS*/
