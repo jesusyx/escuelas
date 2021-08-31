@@ -1,3 +1,7 @@
+SECCION BOLSA DE TRABAJO LO HAGO 70% IZQUIERDA Y ENLACES DE INTERES A LA DERECHA
+
+
+
 LAYOUT ESTRUCTURE
 FONTS AND SIZE
 COLORS
@@ -6,10 +10,10 @@ best pair or couple fonts
 
 -poner la abreviatura de la escuela en color y grande con distinta fuente
 
-avisos
-noticias
-eventos
-bolsa de trabajo
+			avisos
+			noticias
+			eventos
+			bolsa de trabajo
 documentos
 tramites
 
