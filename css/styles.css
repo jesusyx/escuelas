@@ -453,6 +453,7 @@ section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container 
   font-weight: 700;
   font-size: 1rem;
   margin-bottom: 0.7rem;
+  font-family: 'Roboto Condensed';
 }
 section.shadow-sec .jobs-container .jobs-content-container .jobs-item-container .jobs-item p.empresa {
   font-family: 'Open Sans';
@@ -509,7 +510,7 @@ section.events-section .events-container .events-content-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
 }
 section.events-section .events-container .events-content-container .event-item-container {
   padding: 0 1rem;
@@ -609,10 +610,128 @@ section.ilinks .ilinks-container .ilinks-title {
   text-align: center;
   width: 100%;
 }
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container {
+
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container {
+  padding: 1rem;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  border-radius: 2px;
+  flex-direction: column;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body h3 {
+  font-family: 'Roboto Condensed';
+  font-size: 1.5rem;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1px;
+  color: #444;
+  z-index: 10;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body h3:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  z-index: 9;
+  margin-top: 0.6rem;
+  background: linear-gradient(to right, #038F8A 50%, #ccc 50%);
+  display: block;
+  z-index: 10;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body > i {
+  position: absolute;
+  font-size: 8rem;
+  color: #e8e8e8;
+  top: -1.25rem;
+  left: -1.25rem;
+  z-index: 1;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body h3 i {
+  font-size: 1.8rem;
+  margin-right: 0.5rem;
+  color: #038F8A;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body ul {
+  list-style-type: none;
+  margin-bottom: 0;
+  z-index: 10;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body li {
+  margin-bottom: 0.5rem;
+}
+section.ilinks .ilinks-container .ilinks-video .ilnks-items-container .ilinks-item-container .ilinks-item-body li a {
+  /* text-decoration: none; */
+  color: #038F8A;
+  font-size: 0.95rem;
+  font-family: 'Open Sans';
+}
+
 /* END ENLACES DE INTERES */
 
 
 
+/*DOCS SECTION BEGIN*/
+section.docs-section > .ed-container {
+  max-width: 80%;
+}
+section.docs-section .docs-title {
+  text-align: center;
+  width: 100%;
+}
+section.docs-section .docs-container {
+  width: 100%;
+}
+section.docs-section .docs-container .docs-content-container {
+  
+}
+section.docs-section .docs-container .docs-content-container .docs-item-parent {
+
+}
+section.docs-section .docs-container .docs-content-container .docs-item-parent .docs-item {
+  display: flex;
+  background: #EAEAEA;
+  padding: 1rem 0;
+  border-radius: 2px;
+  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+section.docs-section .docs-container .docs-content-container .docs-item-parent .docs-item .head {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.docs-section .docs-container .docs-content-container .docs-item-parent .docs-item .head svg{
+  height: auto;
+  fill: #038F8A;
+  width: 40px;
+}
+section.docs-section .docs-container .docs-content-container .docs-item-parent .docs-item .body {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.docs-section .docs-container .docs-content-container .docs-item-parent .docs-item .body p {
+  margin-bottom: 0;
+  padding-right: 1rem;
+}
+/*END DOCS SECTION*/
+
+
+
+/*FOOTER*/
+footer {
+  height: 600px;
+  background: #464646;
+}
+/*END FOOTER*/
 
 
 
