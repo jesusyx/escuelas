@@ -25,15 +25,13 @@ body {
 /*GENERAL STYLES*/
 
 
-h1, h2, h3, h4, h5 {
+body.front h1, body.front h2, body.front h3, body.front h4, body.front h5 {
   font-family: 'Open Sans';
   font-weight: 700;
-  
 }
-h1 a, h2 a, h3 a, h4 a, h5 a {
+body.front h1 a, body.front h2 a, body.front h3 a, body.front h4 a, body.front h5 a {
   font-family: 'Open Sans';
   font-weight: 700;
-
 }
 
 .section-80 {

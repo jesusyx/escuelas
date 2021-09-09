@@ -3,8 +3,33 @@ body.page {
 }
 
 /*Global*/
+body.page h1 {
+    color: #444; 
+    line-height: 1.55;
+}
+body.page h2, 
+body.page h3 {
+    color: #666;
+    font-family: 'Roboto Condensed';
+    line-height: 1.55;
+    font-weight: 400;
+}
+body.page h4, 
+body.page h5, 
+body.page h6 {
+    color: #666;
+    font-family: 'Roboto Condensed';
+    line-height: 1.55;
+    font-weight: 600;
+}
 
-h1, h2, h3, h4, h5, h6, p, li {
+body.page p {
+    line-height: 1.75;
+}
+
+
+body.page p, 
+body.page li {
     color: #444;
 }
 
@@ -81,10 +106,10 @@ section.page-article .article-container article .article-content h1{
     color: #444;
 }
 section.page-article .article-container article .article-content .socialmedia p {
-    font-size: 2.125rem;
+    font-size: 2.5rem;
     border-top: 1px solid rgb(221, 221, 221);
     border-bottom: 1px solid rgb(221, 221, 221);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 section.page-article .article-container article .article-content .socialmedia p i:nth-child(1){
     color: #4267B2;
@@ -98,6 +123,40 @@ section.page-article .article-container article .article-content .socialmedia p 
     color: #0073AF; 
 }
 
+section.page-article .article-container article .article-content .metadata {
+    display: flex;
+}
+section.page-article .article-container article .article-content .metadata p{
+    font-size: 0.75rem;
+    font-family: 'Open Sans';
+    color: #666;
+}
+section.page-article .article-container article .article-content .metadata p.date{
+    padding-left: 0.5rem;
+    border-left: 1px solid rgb(185, 185, 185);
+}
+section.page-article .article-container article .article-content .metadata .autor span{
+    font-weight: 600;
+    color: #197575;
+    padding-right: 0.5rem;
+}
+section.page-article .article-container article .article-content .content h2{
+    padding-bottom: 1.563rem;
+    margin-bottom: 1.875rem;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+section.page-article .article-container article .article-content .content p{
+    font-family: 'Open Sans';
+    font-size: 0.95rem;
+}
+section.page-article .article-container article .article-content .content ul {
+    padding-left: 1.75rem;
+}
+section.page-article .article-container article .article-content .content ul li{
+    font-family: 'Open Sans';
+    font-size: 0.95rem;
+    margin-bottom: 0.75rem;
+}
 
 
 
@@ -107,3 +166,12 @@ section.aside {
 
 /*END ARTICLE*/
 
+
+
+
+@media screen  and (min-width: 1366px) {
+    body.page .section-80 {
+      max-width: 1280px;
+    }
+  }
+  
