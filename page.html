@@ -46,7 +46,7 @@
 
 
   <body class="page">
-    <header class="page">
+    <header>
       <div class="header-top s-100">
         <div class="header-top-child ed-container section-80">
           <div class="left s-50 ed-item ed-container s-main-start">
@@ -61,58 +61,84 @@
         </div>
       </div>
 
-      <div class="nav__container ed-container section-80">
-        <div class="nav__mobile">
-          <div class="nav__logo">
-            <img src="images/EP_Derecho_295x295.png" alt="" />
-            <h1>
-              Facultad de Ciencias <br />
-              Jurídicas y Políticas<br />
-              <span>UNA - PUNO</span>
-            </h1>
+      <div class="nav__container">
+        <div class="logo-section-container ed-container section-80">
+
+
+          <div class="nav__mobile">
+            <div class="nav__logo">
+              <img src="images/EP_Derecho_295x295.png" alt="" />
+              <h1>
+                Facultad de Ciencias <br />
+                Jurídicas y Políticas<br />
+                <span>UNA - PUNO</span>
+              </h1>
+            </div>
+            <!-- HAMBURGUER -->
+            <div class="nav__btn">
+              <a aria-label="Mobile menu" class="nav-toggle fade"
+                ><span></span><span class="mrg"></span><span class="mrg"></span
+              ></a>
+            </div>
+            <!-- END HAMBURGUER -->
           </div>
-          <!-- HAMBURGUER -->
-          <div class="nav__btn">
-            <a aria-label="Mobile menu" class="nav-toggle fade"
-              ><span></span><span class="mrg"></span><span class="mrg"></span
-            ></a>
+
+          <div class="right-logo">
+
+
+            <div class="search">
+              <form action="/" method="get">
+                <!-- <label for="search">Buscar en:</label> -->
+                <input type="text" name="s" id="search" value="" placeholder="Buscar..." />
+                <input type="image" alt="Search" src="images/magnifying-glass (1).png" />
+              </form>
+            </div>
+            
+            <div class="help-menu">
+              <ul class="hp ">
+                <li><i class="fas fa-graduation-cap"></i> Egresados</li>
+                <li><i class="far fa-file"></i> Trámites</li>
+                <li><i class="fab fa-buffer"></i> Horario</li>
+                <li><i class="fas fa-book"></i> Libro de Reclamaciones</li>
+              </ul>
+            </div>
           </div>
-          <!-- END HAMBURGUER -->
+
+
+
         </div>
 
-        <nav class="menu-toggle">
-          <ul class="nav__menu">
-            <li><a href="/">Inicio</a></li>
-            <li><a href="/page.html">Facultad</a></li>
-            <li class="dropdown">
-              <a href="#">Acreditación</a>
-              <ul class="nested-menu">
-                <li><a href="">Dropdown item 1</a></li>
-                <li><a href="">Dropdown item 2</a></li>
-                <li><a href="">Dropdown item 3</a></li>
-                <li class="dropdown second-level">
-                  <a href="#">2nd level dropdown</a>
-                  <ul>
-                    <li><a href="">Dropdown item 1</a></li>
-                    <li><a href="">Dropdown item 2</a></li>
-                    <li><a href="">Dropdown item 3</a></li>
-                  </ul>
-                </li>
-                <li><a href="">Dropdown item 3</a></li>
-                <li><a href="">Dropdown item 4</a></li>
-              </ul>
-            </li>
-            <li><a href="">Investigación</a></li>
-            <li><a href="">Libros</a></li>
-            <li><a href="">Contacto</a></li>
-            <li>
-              <a href=""><i class="fas fa-search"></i></a>
-            </li>
-          </ul>
-        </nav>
+        <div class="nav-container">
+          <nav class="menu-toggle ed-container section-80">
+            <ul class="nav__menu">
+              <li><a href="/">Inicio</a></li>
+              <li><a href="/page.html">Facultad</a></li>
+              <li class="dropdown">
+                <a href="#">Acreditación</a>
+                <ul class="nested-menu">
+                  <li><a href="">Dropdown item 1</a></li>
+                  <li><a href="">Dropdown item 2</a></li>
+                  <li><a href="">Dropdown item 3</a></li>
+                  <li class="dropdown second-level">
+                    <a href="#">2nd level dropdown</a>
+                    <ul>
+                      <li><a href="">Dropdown item 1</a></li>
+                      <li><a href="">Dropdown item 2</a></li>
+                      <li><a href="">Dropdown item 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="">Dropdown item 4</a></li>
+                  <li><a href="">Dropdown item 5</a></li>
+                </ul>
+              </li>
+              <li><a href="">Investigación</a></li>
+              <li><a href="">Libros</a></li>
+              <li><a href="">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-
     
 
 
