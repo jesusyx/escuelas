@@ -572,6 +572,9 @@ section.events-section .events-container .events-content-container .event-item-c
   width: 5rem;
   background: #038F8A;
 }
+section.events-section .events-container .events-content-container .event-item-container .event-single-item .image-container img {
+  display: flex;
+}
 section.events-section .events-container .events-content-container .event-item-container .event-single-item .image-container .square-date div.day {
   background: #038F8A;
   color: #fff;
@@ -1207,7 +1210,7 @@ footer > .btm-bar > .ed-container {
   justify-content: center;
 }
 footer > .btm-bar > .ed-container p {
-  margin: 0;
+  margin: 0 1rem;
   padding: 0.625rem 0;
   font-family: 'Nunito Sans';
   font-size: 0.8rem;
@@ -1744,11 +1747,13 @@ footer .footer-container .footer-right-logo .footer-navs nav ul li a{
   section.news-events-section .custom-container.right .events-container p:last-child {
     display: none;
   }
-  section.news-events-section .custom-container .news-container .single-news:not(:last-child) {
+  section.news-events-section .custom-container .news-container .single-news:nth-child(1) {
     padding-left: 0;
+    padding-right: 0.5rem;
   }
-  section.news-events-section .custom-container .news-container .single-news:last-child {
+  section.news-events-section .custom-container .news-container .single-news:nth-child(2){
     padding-right: 0;
+    padding-left: 0.5rem;
   }
 
 
@@ -1777,6 +1782,11 @@ footer .footer-container .footer-right-logo .footer-navs nav ul li a{
   section.events-section .events-container .events-content-container .event-item-container:nth-child(4){
     display: none;
   }
+  section.events-section .events-container .events-content-container .event-item-container .event-single-item .event-single-item-body {
+    padding: 1rem;
+  }
+
+  
   
 
   /*END EVENTOS*/
@@ -1815,8 +1825,8 @@ footer .footer-container .footer-right-logo .footer-navs nav ul li a{
     width: calc(50% - 1.5rem);
   }
   section.enlaces .enlaces-container .enlaces-content-container .enlaces-items-container .enlaces-item .circular {
-    width: 11rem;
-    height: 11rem;
+    width: 10rem;
+    height: 10rem;
   }
 
 
@@ -1851,9 +1861,16 @@ footer .footer-container .footer-right-logo .footer-navs nav ul li a{
     align-items: center;
    }
 
-   section.acred-logos .acred-container .other img {
-     padding: 0.4rem 1rem;
+   section.acred-logos .acred-container .other img:first-child {
+      padding-right: 0.5rem;
    }
+   section.acred-logos .acred-container .other img:last-child {
+    padding-left: 0.5rem;
+ }
+  section.acred-logos .acred-container .other img {
+    width: 50%;
+    height: 5rem;
+  }
    section.acred-logos .acred-container .other img:not(:last-child) {
      margin: 0;
    }
@@ -1887,6 +1904,28 @@ footer .footer-container .footer-right-logo .footer-navs nav ul li a{
     display: flex;
     justify-content: center;
   }
+}
+
+
+@media screen  and (max-width: 668px) { 
+
+  header .header-top .header-top-child {
+    padding: 0.625rem 1rem;
+
+  }
+
+  header .nav__logo h1 {
+    font-size: 0.85rem;
+  }
+  header .nav__container .logo-section-container .nav__mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header .nav__container .logo-section-container .right-logo .help-menu ul.hp li:not(:last-child) {
+    padding-right: 0.8rem;
+  }
+  
 }
 
 
