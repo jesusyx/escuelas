@@ -1,0 +1,60 @@
+
+body.page.search section.page-article.search .article-container.search {
+    background:#fff;
+    padding: 2rem;
+}
+body.page.search section.page-article.search .article-container.search h2 {
+    color:#444;
+}
+/* body.page.search section.page-article.search .article-container.search .search-content{
+    display: flex;
+    flex-direction: column;
+} */
+body.page.search section.page-article.search .article-container.search .search-content .result-item{
+    display: flex;
+    height: 120px;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-item {
+    display: flex;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-item img {
+    border-radius: 2px;
+    height: 100%;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-content {
+    padding: 0.5rem 1rem;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-content p {
+    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    color: #BEA12C;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-content h3 {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-content .cat {
+    display: flex;
+    justify-content: flex-start;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-content .cat span:first-child{
+    margin-left: 0rem;
+}
+body.page.search section.page-article.search .article-container.search .search-content .result-content .cat span{
+    margin-left: 0.5rem;
+    background: #e0e0e0;
+    color: #444;
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.7rem;
+}

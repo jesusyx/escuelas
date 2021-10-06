@@ -1,0 +1,46 @@
+body.page.pagenotfound section.page-article {
+    width: 100%;
+}
+
+body.page.pagenotfound section.page-article .article-container article .article-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+body.page.pagenotfound section.page-article .article-container article .article-content .illustration {
+    width: 50%;
+    margin-bottom: 2rem;
+}
+body.page.pagenotfound section.page-article .article-container article .article-content .content-pagenotfound {
+    width: 50%;
+    text-align: center;
+}
+body.page.pagenotfound section.page-article .article-container article .article-content .content-pagenotfound p {
+    margin-bottom: 0.5rem;
+    font-family: 'Poppins';
+}
+body.page.pagenotfound section.page-article .article-container article .article-content .content-pagenotfound p.fcf {
+    font-size: 5rem;
+    font-weight: 700;
+}
+body.page.pagenotfound section.page-article .article-container article .article-content .content-pagenotfound p.fcftitle {
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+body.page.pagenotfound section.page-article .article-container article .article-content .content-pagenotfound p.fcftext {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    body.page.pagenotfound section.page-article .article-container article .article-content .illustration {
+        width: 100%;
+    }
+    body.page.pagenotfound section.page-article .article-container article .article-content .content-pagenotfound {
+        width: 100%;
+    }
+}

@@ -1,0 +1,35 @@
+body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados {
+    padding: 3rem 4rem;
+    background: #fff;
+}
+body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados .comunicados-content{
+    margin-bottom: 1.7rem;
+}
+body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados .comunicados-content:hover a{
+    color: #06807C;
+    transition: all ease 0.5s;
+}
+body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados .comunicados-content a {
+    color: rgb(37, 37, 37);
+    font-weight: 700;
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados .comunicados-content span.badge-date{
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    font-size: 0.8rem;
+    color: #06807C;
+}
+body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados .comunicados-content p i{
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width: 728px) {
+    body.page.comunicados section.page-article.comunicados .article-container.comunidados .brkp-right.comunicados {
+        padding: 1.5rem 2rem;
+        background: #fff;
+    }
+}

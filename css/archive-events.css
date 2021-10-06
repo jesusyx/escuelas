@@ -1,0 +1,6 @@
+body.page.events section.events-section .events-container .events-content-container {
+    flex-wrap: wrap;
+}
+body.page.events section.events-section .events-container .events-content-container .event-item-container{
+    margin-bottom: 2rem;
+}

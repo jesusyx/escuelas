@@ -1,0 +1,46 @@
+
+body.page.tv section.archive-tv {
+    margin-top: 2.5rem;
+}
+
+body.page.tv section.archive-tv .tv-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+body.page.tv section.archive-tv .tv-container .tv-single-item{
+    width: calc(33% - 1rem);
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px, rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+}
+body.page.tv section.archive-tv .tv-container .tv-single-item h2 {
+    padding: 0.5rem 1rem;
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 1rem;
+}
+body.page.tv section.archive-tv .tv-container .tv-single-item img {
+    padding: 10px 10px 0px 10px;
+}
+
+
+@media screen  and (max-width: 950px) {
+    body.page.tv section.archive-tv .tv-container .tv-single-item{
+        width: calc(50% - 0.5rem);
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen  and (max-width: 768px) {
+    body.page.tv section.archive-tv .tv-container .tv-single-item{
+        width: calc(100% - 0.5rem);
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
